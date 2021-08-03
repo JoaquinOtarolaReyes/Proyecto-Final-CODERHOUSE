@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*----------colores---------*/
+$textoColores:rgb(231, 254, 255);
+$colorFondo:rgb(17, 17, 17);
+$colorNav:rgb(34, 34, 34);
+$colorBotones:rgb(233, 85, 0);
+$colorBordes: rgb(0, 247, 255);
+$colorHover:rgb(255, 94, 0);
+$botonesHover:rgb(173, 64, 0);
+$colorFooter: rgb(34, 34, 34);
+$colorServicios: rgb(51, 50, 50);
+
+
+/*-------fuentes----------*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+$josefin: "Josefin Sans",sans-serif;
+
+/*----declaracion de mixin-----*/
+
+@mixin textos {
+    font-family: $josefin;
+    font-weight: 300;
+    color: $textoColores;
+}
+/*------general----*/
+main{
+    background: black;
+}
+
+/*-----------index----------*
+
+/*-------NAV-------*/
+.navbar{ 
+    @include textos;
+    background: $colorNav;
+    height: 60px;
+        a{
+          @include textos;
+        }}
+        a:hover{
+             color: $colorHover;
+         }
+/*-------fin nav------*/
+
+/*-------hero-------*/
+.hero{
+    background: url(../img/BANNER1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    @include textos;
+     h1{
+        margin: 0 70px 0 0;
+        font-size: 5.5rem;
+        line-height: 100px;
+        cursor: pointer;
+    }
+     h2{
+        margin: 0 70px 0 0;
+        font-size: 2.5rem;
+        cursor: pointer;    
+}}
+/*-----fin hero-----*/
+
+/*-----------index--------*/
+.tablaLista{
+    margin: 0 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    display: flex;
+
+    img:hover{
+        transform: scale(0.99);
+    }   
+    div{
+        padding: 25px;
+        background: $colorServicios;
+        border-radius: 15px;
+        width: 550px;
+        margin: 30px;
+    }
+    h2, h3{
+        @include textos;
+        line-height: 40px;
+        text-align: center;
+    }
+    h2:hover{
+        color: $colorHover;
+}}
+
+.tablaLista2{
+    @extend .tablaLista;
+}
+/*-------fin tablaLista------*/
+
+/*------footer------*/
+footer{
+    background:$colorFooter;
+    height: 22vh;
+    display: flex;
+
+    .logoFooter{
+        font-size: 2rem;
+        letter-spacing: 2px;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 50px 0 50px;
+        text-decoration: none;
+        @include textos;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: $colorHover;
+    }
+    .navFooter{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+        @include textos;
+    }
+
+    li{
+        justify-content: space-around;
+        width: 300px;
+        list-style: none;
+        @include textos;
+    }   
+    .politicas{
+       @extend .navFooter;
+    }
+  
+  }
+/*-------fin footer-------*/
+/*-----fin index----*/
+
+/*-----sobre nosotros-----*/
+.mainSobreMi{
+    height: 80vh;
+}
+.imgSobreMi{
+    clip-path: circle(40% at center);
+    position: relative;
+    left: 740px;
+    max-width: 100%;
+    :hover{
+        transform: scale(1.09);
+}}
+.presentacion{
+    height: 21vh;
+    width: 700px;
+    border-radius: 20px;
+    background: $colorFondo;
+    justify-content: center;
+    position: relative;
+    top: 500px;
+    left: 175px;
+    align-items: center;
+    @include textos;
+
+    h2{
+        font-size: 2rem;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    p{
+        text-align: center;
+        width: 700px;
+        line-height: 20px;
+        padding: 30px;
+}}
+/*------fin sobre nosotros-----*/
+
+
+/*----declaracion de map----funcion map-get-----*/
+
+$bordes:(
+    borde: 2px solid $colorBordes
+);
+
+/*------pagos------*/
+.contenedorPagos{
+    background:$colorFondo;
+    height: 100vh;
+}
+.pruebaLista{
+    background: $colorFondo;
+    width: 800px;
+    height: 70vh;
+    @include textos;
+    font-weight: 300;
+    margin: auto;
+    padding-top: 50px;
+    
+    ul{
+       display: flex;
+       list-style: none;
+       justify-content: space-around;
+       padding: 50px;
+       border-bottom: 2px solid $colorBordes;
+}   
+    li{
+       font-size: 1.5rem;
+}}
+.formaPago{
+    width: 800px;
+    margin: auto;
+    line-height: 60px;
+    @include textos;
+
+    h5{
+        padding: 20px 0 0 0;
+    }
+    a{
+        color: $textoColores;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $colorHover;
+        text-decoration: underline;
+    }
+    input{
+        padding: 0 5px 0 0;
+}
+    #consultasPagos{
+        background: $colorFondo;
+        color: $textoColores;
+        padding: 5px;
+        width: 100%;
+    }   
+    .btnConfirmarCompra{
+        width: 100%;
+        background:$colorBotones;
+        border-radius: 20px;
+        border: none;
+        color: $textoColores;
+}}
+
+/*------fin pagos------*/
+
+/*-----contacto------*/
+.contacto{
+    height: 90vh;
+    background:$colorFondo;
+    @include textos;
+}
+.formularioContacto{
+    color: $textoColores;
+    width: 400px;
+    background: $colorFondo;
+    position: relative;
+    left: 40%;
+    top: 12%;
+    padding: 30px;
+    border-radius: 5px;   
+}
+#consultasContacto{
+    padding:5px;
+    background:$colorFondo;
+    @include textos;
+    border-radius: 4px;
+}
+.controles{
+    padding: 10px;
+    font-family: $josefin;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    width: 100%;
+    border: 2px solid $colorBordes;
+    border-radius: 5px;
+}
+.form{
+    margin: 10px;
+    line-height: 40px;
+    @include textos;
+    h5{
+        font-size: 14px;
+        padding-top: 20px;
+        @include textos;
+    }
+    a{
+        text-decoration: none;
+        font-size: 14px;
+        @include textos;
+    }
+    a:hover{
+        color: $colorHover;
+        text-decoration: underline;
+}
+    h3{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .checbox{
+        border: 2px solid $colorBordes;
+    }
+}
+.btnEnviar{
+    background:$colorBotones;
+    @include textos;
+    font-weight: 500;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+.btnEnviar:hover{
+    background:$botonesHover;
+    font-weight: 800;
+}
+/*------fin contacto------*/
+
+/*----compromiso social----*/
+.mainCompromiso{
+    height: 50vh;
+    width: 100%;
+    background:$colorFondo;
+    @include textos;
+    font-weight: 400;
+    line-height: 30px;
+}
+.asociaciones{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+}
+.compSocial{
+    width: 800px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 550px;
+    top: 50px;
+    color: $textoColores;
+}
+.asociacion1{
+    border-radius: 20px;
+    background:$colorServicios;
+    padding: 20px;
+    a{
+        font-size: 1.5rem;
+        color: $textoColores;
+        text-decoration: none;
+        line-height: 50px;
+    }
+    p{
+        color:$textoColores;
+        line-height: 20px;
+    }}
+.asociacion2{
+    @extend .asociacion1;
+}
+.asociacion3{
+    @extend .asociacion1;
+}
+/*----fin compromiso social-----*/
+
+   

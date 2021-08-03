@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*----------colores---------*/
+/*-------fuentes----------*/
+/*----declaracion de mixin-----*/
+/*------general----*/
+main {
+  background: black;
+}
+
+/*-----------index----------*
+
+/*-------NAV-------*/
+.navbar {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+  background: #222222;
+  height: 60px;
+}
+
+.navbar a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+a:hover {
+  color: #ff5e00;
+}
+
+/*-------fin nav------*/
+/*-------hero-------*/
+.hero {
+  background: url(../img/BANNER1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+.hero h1 {
+  margin: 0 70px 0 0;
+  font-size: 5.5rem;
+  line-height: 100px;
+  cursor: pointer;
+}
+
+.hero h2 {
+  margin: 0 70px 0 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/*-----fin hero-----*/
+/*-----------index--------*/
+.tablaLista, .tablaLista2 {
+  margin: 0 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tablaLista img:hover, .tablaLista2 img:hover {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.tablaLista div, .tablaLista2 div {
+  padding: 25px;
+  background: #333232;
+  border-radius: 15px;
+  width: 550px;
+  margin: 30px;
+}
+
+.tablaLista h2, .tablaLista2 h2, .tablaLista h3, .tablaLista2 h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+  line-height: 40px;
+  text-align: center;
+}
+
+.tablaLista h2:hover, .tablaLista2 h2:hover {
+  color: #ff5e00;
+}
+
+/*-------fin tablaLista------*/
+/*------footer------*/
+footer {
+  background: #222222;
+  height: 22vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .logoFooter {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px 50px 0 50px;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #ff5e00;
+}
+
+footer .navFooter, footer .politicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+footer li {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 300px;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+/*-------fin footer-------*/
+/*-----fin index----*/
+/*-----sobre nosotros-----*/
+.mainSobreMi {
+  height: 80vh;
+}
+
+.imgSobreMi {
+  -webkit-clip-path: circle(40% at center);
+          clip-path: circle(40% at center);
+  position: relative;
+  left: 740px;
+  max-width: 100%;
+}
+
+.imgSobreMi :hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.presentacion {
+  height: 21vh;
+  width: 700px;
+  border-radius: 20px;
+  background: #111111;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 500px;
+  left: 175px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+.presentacion h2 {
+  font-size: 2rem;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.presentacion p {
+  text-align: center;
+  width: 700px;
+  line-height: 20px;
+  padding: 30px;
+}
+
+/*------fin sobre nosotros-----*/
+/*----declaracion de map----funcion map-get-----*/
+/*------pagos------*/
+.contenedorPagos {
+  background: #111111;
+  height: 100vh;
+}
+
+.pruebaLista {
+  background: #111111;
+  width: 800px;
+  height: 70vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+  font-weight: 300;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.pruebaLista ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  border-bottom: 2px solid #00f7ff;
+}
+
+.pruebaLista li {
+  font-size: 1.5rem;
+}
+
+.formaPago {
+  width: 800px;
+  margin: auto;
+  line-height: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+.formaPago h5 {
+  padding: 20px 0 0 0;
+}
+
+.formaPago a {
+  color: #e7feff;
+  text-decoration: none;
+}
+
+.formaPago a:hover {
+  color: #ff5e00;
+  text-decoration: underline;
+}
+
+.formaPago input {
+  padding: 0 5px 0 0;
+}
+
+.formaPago #consultasPagos {
+  background: #111111;
+  color: #e7feff;
+  padding: 5px;
+  width: 100%;
+}
+
+.formaPago .btnConfirmarCompra {
+  width: 100%;
+  background: #e95500;
+  border-radius: 20px;
+  border: none;
+  color: #e7feff;
+}
+
+/*------fin pagos------*/
+/*-----contacto------*/
+.contacto {
+  height: 90vh;
+  background: #111111;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+.formularioContacto {
+  color: #e7feff;
+  width: 400px;
+  background: #111111;
+  position: relative;
+  left: 40%;
+  top: 12%;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+#consultasContacto {
+  padding: 5px;
+  background: #111111;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+  border-radius: 4px;
+}
+
+.controles {
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0 0 0;
+  width: 100%;
+  border: 2px solid #00f7ff;
+  border-radius: 5px;
+}
+
+.form {
+  margin: 10px;
+  line-height: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+.form h5 {
+  font-size: 14px;
+  padding-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+.form a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+}
+
+.form a:hover {
+  color: #ff5e00;
+  text-decoration: underline;
+}
+
+.form h3 {
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.form .checbox {
+  border: 2px solid #00f7ff;
+}
+
+.btnEnviar {
+  background: #e95500;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+  font-weight: 500;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+}
+
+.btnEnviar:hover {
+  background: #ad4000;
+  font-weight: 800;
+}
+
+/*------fin contacto------*/
+/*----compromiso social----*/
+.mainCompromiso {
+  height: 50vh;
+  width: 100%;
+  background: #111111;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #e7feff;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.asociaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: 100px;
+}
+
+.compSocial {
+  width: 800px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 550px;
+  top: 50px;
+  color: #e7feff;
+}
+
+.asociacion1, .asociacion2, .asociacion3 {
+  border-radius: 20px;
+  background: #333232;
+  padding: 20px;
+}
+
+.asociacion1 a, .asociacion2 a, .asociacion3 a {
+  font-size: 1.5rem;
+  color: #e7feff;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.asociacion1 p, .asociacion2 p, .asociacion3 p {
+  color: #e7feff;
+  line-height: 20px;
+}
+
+/*----fin compromiso social-----*/
+/*# sourceMappingURL=estilos.css.map */

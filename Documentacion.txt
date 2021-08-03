@@ -1,0 +1,8 @@
+Documentación del proyecto. 
+
+Agregue meta:keywords y meta:description
+
+a las etiquetas de las imagenes les agregue el alt y les cambie el nombre para que sean mas especificas, las imagenes ya estan en el tamaño correcto.
+De todos modos no son las imagenes reales que van a llevar, van solo como prueba
+
+
