@@ -1,8 +1,13 @@
-Documentación del proyecto. 
+Documentación del proyecto.
 
-Agregue meta:keywords y meta:description
+Agregue SEO en los archivos index.html compromisoSocial.html sobreNosotros.html pagos.html contactenos.html
 
-a las etiquetas de las imagenes les agregue el alt y les cambie el nombre para que sean mas especificas, las imagenes ya estan en el tamaño correcto.
-De todos modos no son las imagenes reales que van a llevar, van solo como prueba
+meta description: "Diseño gráfico programación tipografía servicios comunicacion social"
+
+meta keywords: "tipografía, lettering, desarrollo web, diseño gráfico"
+
+Al index.html y sobreNosotros.html agregue el atributo alt a las imagenes, con su respectivo titulo
+
+En contactenos.html modifique el h1 por un h2 en el titulo del formulario "Contactenos"
 
 
