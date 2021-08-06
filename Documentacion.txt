@@ -1,13 +1,16 @@
 Documentación del proyecto.
 
-Agregue SEO en los archivos index.html compromisoSocial.html sobreNosotros.html pagos.html contactenos.html
+-En el index:
 
-meta description: "Diseño gráfico programación tipografía servicios comunicacion social"
+Agregue la descripcion:
+"Diseño gráfico programación tipografía servicios comunicacion social"
 
-meta keywords: "tipografía, lettering, desarrollo web, diseño gráfico"
+Agregue las keywords:
+"tipografía, lettering, desarrollo web, diseño gráfico"
 
-Al index.html y sobreNosotros.html agregue el atributo alt a las imagenes, con su respectivo titulo
+-En contacto:
 
-En contactenos.html modifique el h1 por un h2 en el titulo del formulario "Contactenos"
+Modifique los titulos: 
+Modifique el h1 por un h2
 
 
